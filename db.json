@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "ti07197656",
+      "lastName": "ti07197656",
+      "password": "1234567",
+      "email": "lahmar@gmail.com",
+      "adress": "812 Av. des Étudiants, Saint-Bruno, QC G0W 2L0, Canada"
+    },
+    {
+      "id": 2,
+      "firstName": "taha",
+      "lastName": "hfbft",
+      "password": "2333",
+      "email": "FFGGGhmar.taha20@gmail.com",
+      "adress": "Route de la Marsa Sidi Daoud ,2046 La Marsa Tunis."
+    },
+    {
+      "id": 3,
+      "firstName": "wael",
+      "lastName": "ada",
+      "password": "1234567",
+      "email": "wael.lahmar@trustagency.fr",
+      "adress": "Route de la Marsa Sidi Daoud ,2046 La Marsa Tunis."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name Product</th>
+        <th scope="col">Quatity Product</th>
+        <th scope="col">Reference Product</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products ;let i=index">       
+         
+        <td>{{product.nameProduct}}</td>
+        <td>{{product.qtyProduct}}</td>
+        <td>{{product.refProduct}}</td>
+        <td><button class="btn btn-danger" (click)="deleteElement(i)">delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+  

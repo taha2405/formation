@@ -1,0 +1,26 @@
+<input type="search" [(ngModel)]="filterQuery">
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">First name</th>
+        <th scope="col">Last name</th>
+        <th scope="col">email</th>
+        <th scope="col">adress</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users| filter: filterQuery; let i=index">
+          <td>{{user.id | number:'3.0'}}</td>
+          <td>{{user.firstName |uppercase }}</td>
+          <td>{{user.lastName|uppercase }}</td>
+          <td>{{user.email|lowercase}}</td>
+          <td >{{user.adress |customPipe}}</td>
+          <td>  <button type="button" class="btn btn-warning" (click)="updateUsers(user.id,i)">Edit</button>
+
+        </tr>
+
+
+        </tbody>
+    
+  </table>

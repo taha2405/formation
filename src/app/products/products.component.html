@@ -1,0 +1,21 @@
+<div class="row">
+    <form class="offset-sm-3 col-sm-6" [formGroup]="addProductForm" (ngSubmit)="addProduct()">
+        <div class="form-group">
+            <label for="nameProduct">Name Product</label>
+            <input type="text" class="form-control" id="nameProduct" placeholder="Name product" formControlName="nameProduct">
+          </div>
+          <div class="form-group">
+            <label for="qtyProduct">Quantity Product</label>
+            <input type="number" class="form-control" id="qtyProduct" placeholder="Quantity product" formControlName="qtyProduct">
+          </div>
+          <div class="form-group">
+            <label for="refProduct">Reference Product</label>
+            <input type="text" class="form-control" id="refProduct" placeholder="Ref product" formControlName="refProduct">
+            <button type="submit" class="btn btn-primary">Add</button>
+    
+          </div>
+          
+    </form>
+</div>
+
+<app-list-products [products]="products" (elementDeleted)="deleteProduct($event)"></app-list-products>
